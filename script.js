@@ -13,7 +13,6 @@ form.addEventListener("submit",e=>{
     fetch(url)
         .then(response=>response.json())
         .then(info=>{
-            console.log(info);
             const {main, name, sys, weather } = info;
             const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`
             const li = document.createElement("li");
