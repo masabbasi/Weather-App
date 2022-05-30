@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #3d3d3d;
+    color: rgb(207, 202, 202);
+}
+
+.container {
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-header {
+    margin: 20px 0 40px;
+    text-shadow: 1px 1px 11px #FFF200;
+}
+
+.app-input {
+    border: none;
+    border-bottom:1px solid #fff200;
+    color: rgb(207, 202, 202);
+    background: none;
+    outline: none;
+    padding: 5px;
+    /* color: inherit; */
+}
+
+.app-input::placeholder {
+    color: rgb(207, 202, 202);
+  }
+
+button {
+    cursor: pointer;
+  }
+
+  .search-btn,.clear-btn {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #fff200;
+    color: #006266;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .search-btn:hover,.clear-btn:hover {
+    background-color: #fffa65;
+  }
+
+  .result-container {
+      width: 90%;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    list-style-type: none;
+  }
+
+  .list-item {
+    width: 18%;
+    height: 220px;
+    margin: 5px;
+    background-color: #6F1E51;
+    padding: 22px;
+    text-align: center;
+    color: rgb(207, 202, 202);
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px -1px 13px 0px rgb(0 0 0 / 88%);
+    -moz-box-shadow: inset 0px -1px 13px 0px rgba(0,0,0,0.88);
+    box-shadow: inset 0px -1px 13px 0px rgb(0 0 0 / 88%);
+  }
+
+  .list-item img {
+    max-width: 50%;
+  }
+
+  .list-item figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .list-item h2 {
+      margin: 5px;
+      color:#12CBC4;
+  }
+
+  .list-item sup {
+      font-size: 10px;
+      background-color: #fff200;
+      color: #006266;
+      border-radius: 4px;
+      padding:2px 5px;
+      margin-left: 2px;
+  }
+
+  .list-item .temp {
+      margin-top: 15px;
+      color: rgb(207, 202, 202);
+  }
+
+  @media (max-width:500px) {
+    .list-item {
+        width:47%
+    }
+  }
