@@ -35,7 +35,8 @@ form.addEventListener("submit",e=>{
         inputSearch.value="";
 })
 
-clearBtn.addEventListener("click",function(){
+clearBtn.addEventListener("click",function(e){
+    e.preventDefault();
     alert.innerText="";
     listResult.innerHTML="";
 })
