@@ -90,10 +90,10 @@ button {
   width: 150px;
   height: 220px;
   margin: 5px;
-  background-color: #6F1E51;
+  background-color: #fff2000a;
   padding: 10px;
   text-align: center;
-  color: rgb(207, 202, 202);
+  color: rgb(205 196 196);
   border-radius: 5px;
   -webkit-box-shadow: inset 0px -1px 13px 0px rgb(0 0 0 / 88%);
   -moz-box-shadow: inset 0px -1px 13px 0px rgba(0,0,0,0.88);
